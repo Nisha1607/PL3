@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+.languagec{
+    position: relative;
+}
+aside {
+  width: 15%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>  
+    <!--This is header-->
+    <header>
+        <nav>
+            <h1 style=" text-align: center; color: rgb(95, 12, 116);">Just Code It!</h1>
+        </nav>
+    </header> 
+  
+     <hr>
+    <!--problem statement-->
+    <div style=" text-align:center">
+        <strong>Problem statement --  &nbsp;
+        Write a program in any language to find the sum of the series 1
+        +11 + 111 + 1111 + ... n terms.
+        
+    </div>
+  <hr>
+    <!--code-->
+    <section>
+        
+                <b> &nbsp;Code :
+                <aside>
+                    <br/>
+                    <br/><br/><br/>
+                    <br/>
+                    <samp>Sample input : </samp><br /><br/><br/>
+                    <kbd>1 + 11 + 111 + 1111 + 11111</kbd>
+                    <br/><br/><br/><br/><br/>
+
+                    <samp>Sample output : </samp><br /><br/><br/>
+                    <kbd>The sum of the series is: 12345</kbd>
+                    <br/><br/><br/><br/>
+                </aside>
+                <code class="languagec">
+                   
+                    &nbsp;  using namespace std;<br>
+                        
+                    &nbsp;    int main()<br>
+                    &nbsp;    {<br>
+                    &nbsp;        int n, i, sum = 0;<br>
+                    &nbsp;        int t = 1;<br>
+                    &nbsp;        cout << "\n\n Display the sum of the series 1 +11 + 111 + 1111 + .. n terms:\n";<br>
+                    &nbsp;        cout << "-------------------------------------------------------------------\n";<br>
+                    &nbsp;        cout << " Input number of terms: ";<br>
+                    &nbsp;        cin >> n;<br>
+                    &nbsp;        for (i = 1; i <= n; i++) <br>
+                    &nbsp;        {<br>
+                    &nbsp;            cout << t << " ";<br>
+                    &nbsp;           if (i < n) <br>
+                    &nbsp;            {<br>
+                     &nbsp;                cout << "+ ";<br>
+                     &nbsp;            }<br>
+                     &nbsp;            sum = sum + t;<br>
+                     &nbsp;           t = (t * 10) + 1;<br>
+                     &nbsp;        }<br>
+                     &nbsp;       cout << "\n The sum of the series is: " << sum << endl;<br>
+                     &nbsp;   }<br>
+                </code>
+             
+    </section>
+    <hr>
+    
+      <!--variables,complexity-->
+    <section style="text-align: center;">
+        <article>
+            <p>Variables used : <var> n, i, sum, t</var></p>
+            <p>complexity-- O(n) <s> and not O(n<sup>2</sup>)</s> </p>
+        </article>
+        
+    </section>
+    <hr>
+    <!--This is footer-->
+<footer>
+    <p> for more such interesting  <sub> problems </sub> and their <sub> codes </sub> please do visit <a href="https://www.w3resource.com">W3Schools</a></p>
+</footer>
+</body>
+    </head>
+</html>
