@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            * {
+  box-sizing: border-box;
+}
+             .col {
+            float: left;
+            width: 25%;
+            padding: 40px;
+            }
+/* Clear floats after the columns */
+            .row:after {
+            content: "";
+            clear: both;
+            display: table;
+            
+            }
+            .section{
+                margin-bottom: 2%;
+            }
+            
+            .column {
+            float: left;
+            width: 50%;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio Player Website</title>
+    </head>
+
+    <body>
+            <header class="header-class">
+                <h1 style=" text-align: center;color:#fbfbfd; background-color: rgb(43, 26, 77); font-family: cursive; font-size: 50px; "><b>Musicana</b></h1>
+            </header>
+            <section>
+                <nav ALIGN="center" style="background-color: aliceblue;padding:10px;">
+                    <a href="./Prac7B(2).html">Video website</a> | &nbsp;
+                    <a href="./Prac7B(3).html">YouTube website</a> | &nbsp;
+                    <a href="./Prac7B(4).html">External resources website</a>
+                </nav>
+            </section>
+            <!-- audio track -->
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <div id="audiocontainer">
+                            <h2 style="font-family: cursive; color: rgb(32, 32, 94);">Titli song </h2>
+                            <img src="titli.jfif" alt="img1" style="width:100% ;height: 250px;">
+                            <audio id="audioplayer" src="02 Titli - Chennai Express.mp3" controls autoplay loop>
+                            </audio><br>
+                            <br><nav style="font-family: sans-serif; color: rgb(218, 50, 106);"><b>Enjoy the full</b> &nbsp; <a href="https://youtu.be/WTJSt4wP2ME"><b>video</b></a></nav>
+                            <br><nav  style="font-family: sans-serif; color: rgb(216, 56, 96);"><b>Get the</b> &nbsp; <a href="https://genius.com/Knaan-wavin-flag-coca-cola-celebration-mix-lyrics"><b>lyrics </b></a></nav>
+                         <br>  <hr> <h3 style="font-family: 'Times New Roman', Times, serif;color: rgb(132, 50, 139);">Credits</h3>
+                            <h4  style="font-family:Georgia;">Movie : Chennai Express</h4>
+                            <h4 style="font-family: Georgia;">Song Name : Titli</h4>
+                            <h4 style="font-family: Georgia;">Singers   : Chinmayi</h4>
+                            <h4 style="font-family: Georgia;">Released : 2013</h4>
+                        </div> 
+                    </div> 
+                    <div class="col">
+                        <div id="audiocontainer">
+                            <h2 style="font-family: cursive; color: rgb(32, 32, 94);">Main agar kahoo... </h2>
+                            <img src="main agar kahu.jfif" alt="img1" style="width:100% ;height: 250px;">
+                            <audio id="audioplayer" src="Main-Agar-Kahoon-Sonu-Nigam,Shreya-Ghoshal.mp3"  controls muted autoplay>
+                            </audio><br>
+                            <!--navigation links-->
+                            <br><nav style="font-family: sans-serif; color: rgb(218, 50, 106);"><b>Enjoy the full</b> &nbsp; <a href="https://youtu.be/WTJSt4wP2ME"><b>video</b></a></nav>
+	                        <br><nav  style="font-family: sans-serif; color: rgb(216, 56, 96);"><b>Get the &nbsp; <a href="https://genius.com/Knaan-wavin-flag-coca-cola-celebration-mix-lyrics">lyrics </b></a></nav>
+                            <br>  <hr> <h3 style="font-family: 'Times New Roman', Times, serif;color: rgb(132, 50, 139);">Credits</h3>
+                            <h4  style="font-family:Georgia;">Movie : Om Shanti Om</h4>
+                            <h4 style="font-family: Georgia;">Song Name : Main agar kahoo</h4>
+                            <h4 style="font-family: Georgia;">Singers   : Shreya-Ghoshal</h4>
+                            <h4 style="font-family: Georgia;">Released : 2000</h4>
+                        </div> 
+                    </div> 
+                    <div class="col">
+                        <div id="audiocontainer">
+                            <h2 style="font-family: cursive; color: rgb(32, 32, 94);">Kbhi kbhi Aditi... </h2>
+                            <img src="kbhi kbhi aditi.jfif" alt="img1" style="width:100% ;height: 250px;">
+                            <audio controls>
+                                <source src="Kabhi-Kabhi-Aditi-Zindagi-Rashid-Ali.mp3">
+                                <source src="Kabhi-Kabhi-Aditi-Zindagi-Rashid-Ali.ogg"> 
+                            </audio><br>
+                            <br><nav style="font-family: sans-serif; color: rgb(218, 50, 106);"><b>Enjoy the full</b> &nbsp; <a href="https://youtu.be/WTJSt4wP2ME"><b>video</b></a></nav>
+	                        <br><nav  style="font-family: sans-serif; color: rgb(216, 56, 96);"><b>Get the &nbsp; <a href="https://genius.com/Knaan-wavin-flag-coca-cola-celebration-mix-lyrics">lyrics </b></a></nav>
+                            <br>  <hr> <h3 style="font-family: 'Times New Roman', Times, serif;color: rgb(132, 50, 139);">Credits</h3>
+                            <h4  style="font-family:Georgia;">Movie :Jane tu ya jane na</h4>
+                            <h4 style="font-family: Georgia;">Song Name : Kbhi kbhi aditi</h4>
+                            <h4 style="font-family: Georgia;">Singers   : Rashid Ali</h4>
+                            <h4 style="font-family: Georgia;">Released : 2008</h4>
+                        </div> 
+                    </div> 
+                    <div class="col">
+                        <div id="audiocontainer">
+                            <h2 style="font-family: cursive; color: rgb(32, 32, 94);">Aankho me teri... </h2>
+                            <img src="aankho me teri.jfif" alt="img1" style="width:100% ;height: 250px;">
+                            <audio src="Ajab Si (Om Shanti Om) - K.K - 320Kbps.mp3" controls>
+                                <track src="[English (auto-generated)] Aankhon Mein Teri Ajab Si _ Om Shanti Om _ Shahrukh Khan _ Deepika Padukone [DownSub.com].srt" kind="subtitles" srclang="en" label="English" default>
+                            </audio><br>
+                            <br><nav style="font-family: sans-serif; color: rgb(218, 50, 106);"><b>Enjoy the full</b> &nbsp; <a href="https://youtu.be/WTJSt4wP2ME"><b>video</b></a></nav>
+	                        <br><nav  style="font-family: sans-serif; color: rgb(216, 56, 96);"><b>Get the &nbsp; <a href="https://genius.com/Knaan-wavin-flag-coca-cola-celebration-mix-lyrics">lyrics </b></a></nav>
+                            <br>  <hr> <h3 style="font-family: 'Times New Roman', Times, serif;color: rgb(132, 50, 139);">Credits</h3>
+                            <h4  style="font-family:Georgia;">Movie : Om Shanti om</h4>
+                            <h4 style="font-family: Georgia;">Song Name :Ajab si</h4>
+                            <h4 style="font-family: Georgia;">Singers   : KK</h4>
+                            <h4 style="font-family: Georgia;">Released : 2000</h4>
+                        </div> 
+                    </div> 
+                </div>
+            </section>
+            <br>
+            
+    </body> 
+     <!--footer-->
+     <footer>
+       <b> To explore more -</b>
+        <a href="https://www.spotify.com/in/"> click here</a>
+    </footer>
+</html>
