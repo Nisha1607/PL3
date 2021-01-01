@@ -1,0 +1,171 @@
+
+<html>
+    <head>
+        <title>Contact:VegeMart</title>
+        <link rel="stylesheet" type="text/css" href="cstyle.css"/>
+        <script>
+            function incrementValue()
+            {
+                var value = parseInt(document.getElementById('pro1').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value<15)
+                    value++;
+                else
+                    value=15;
+                document.getElementById('pro1').value = value;
+            }
+            function decrementValue()
+            {
+                var value = parseInt(document.getElementById('pro1').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value>0)
+                    value--;
+                else
+                    value=0;
+                document.getElementById('pro1').value = value;
+            }
+            function incrementValue_2()
+            {
+                var value = parseInt(document.getElementById('pro2').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value<15)
+                    value++;
+                else
+                    value=15;
+                document.getElementById('pro2').value = value;
+            }
+            function decrementValue_2()
+            {
+                var value = parseInt(document.getElementById('pro2').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value>0)
+                    value--;
+                else
+                    value=0;
+                document.getElementById('pro2').value = value;
+            }
+            function incrementValue_3()
+            {
+                var value = parseInt(document.getElementById('pro3').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value<15)
+                    value++;
+                else
+                    value=15;
+                document.getElementById('pro3').value = value;
+            }
+            function decrementValue_3()
+            {
+                var value = parseInt(document.getElementById('pro3').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if( value>0)
+                    value--;
+                else
+                    value=0;
+                document.getElementById('pro3').value = value;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">
+              Shopping Bag
+            </div>
+           
+            <!-- Product #1 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="images/LadyFinger.jpg" style="width: 150px; height: 90px; margin-right: 10px;" alt="lf" />
+              </div>
+           
+              <div class="description">
+                <span>Lady Finger</span>
+                <span>fresh</span>
+                <span style="color:green;">Available</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="images/plus.png" style="width: 20px; height: 20px; margin-right: 10px;"  onclick="incrementValue()" value="Increment Value"  alt="" />
+                </button>
+                <input id="pro1" type="text" name="name" value="1">
+                <button class="minus-btn" type="button"  name="button">
+                  <img src="images/minus.png" style="width: 20px; height: 20px; margin-right: 10px;"  onclick="decrementValue()" value="Decrement Value" alt="" />
+                </button>
+              </div>
+           
+              <div class="total-price">Rs. 20</div>
+            </div>
+           
+            <!-- Product #2 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="images/tomato.jpg" style="width: 150px; height: 90px; margin-right: 10px;" alt=""/>
+              </div>
+           
+              <div class="description">
+                <span>tomato</span>
+                <span>Fresh</span>
+                <span style="color: green;">Available</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="images/plus.png" style="width: 20px; height: 20px; margin-right: 10px;" onclick="incrementValue_2()" value="Increment Value"  alt=""  alt="" />
+                </button>
+                <input id="pro2" type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="images/minus.png" style="width: 20px; height: 20px; margin-right: 10px;" alt=""  onclick="decrementValue_2()" value="Decrement Value" />
+                </button>
+              </div>
+           
+              <div class="total-price">Rs.15</div>
+            </div>
+           
+            <!-- Product #3 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="images/carrot.jpg" style="width: 150px; height: 90px; margin-right: 10px;" alt="" />
+              </div>
+           
+              <div class="description">
+                <span>Carrot</span>
+                <span>fresh</span>
+                <span style="color:green;"> Available</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="images/plus.png" style="width: 20px; height: 20px; margin-right: 10px;" onclick="incrementValue_3()" value="Increment Value"  alt="" />
+                </button>
+                <input id="pro3" type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="images/minus.png" style="width: 20px; height: 20px; margin-right: 10px;"  onclick="decrementValue_3()" value="Decrement Value" alt="" />
+                </button>
+              </div>
+           
+              <div class="total-price">Rs.50</div>
+            </div>
+          </div>
+    </body>
+</html>
+
+
+
+
